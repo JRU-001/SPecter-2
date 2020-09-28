@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">My First App</string>
+    <string name="place_nombre">Digite su nombre</string>
+    <string name="place_appel">Digite su apellido</string>
+    <string name="Gen1">Hombre</string>
+    <string name="Gen2">Mujer</string>
+    <string name="prog_python">Python</string>
+    <string name="prog_java">Java</string>
+    <string name="prog_JS">JS</string>
+    <string name="prog_Go">Go lang</string>
+    <string name="prog_CC">C/C++</string>
+    <string name="prog_C">C#</string>
+    <string name="Msg1">Hola! Mi nombre es:</string>
+    <string name="Msg2">Soy</string>
+    <string name="Msg3">y naci el:</string>
+    <string name="Msg4">Me gusta programar, mis lenguajes favoritos son:</string>
+    <string name="Msg5">No me gusta programar realmente.</string>
+    <string name="Btn1">Enviar</string>
+    <string name="Btn2">Limpiar</string>
 </resources>
