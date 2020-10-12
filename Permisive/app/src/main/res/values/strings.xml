@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Permisive</string>
+    <string name="obt">Obtener Permisos</string>
+    <string name="rev">Reviasr Permisos</string>
+</resources>

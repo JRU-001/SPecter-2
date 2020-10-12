@@ -2,8 +2,6 @@
     <string name="app_name">My First App</string>
     <string name="place_nombre">Digite su nombre</string>
     <string name="place_appel">Digite su apellido</string>
-    <string name="Gen1">Hombre</string>
-    <string name="Gen2">Mujer</string>
     <string name="prog_python">Python</string>
     <string name="prog_java">Java</string>
     <string name="prog_JS">JS</string>
@@ -17,4 +15,13 @@
     <string name="Msg5">No me gusta programar realmente.</string>
     <string name="Btn1">Enviar</string>
     <string name="Btn2">Limpiar</string>
+    <string name="Gend">Genero</string>
+
+
+    <string-array name="Genes">
+        <item>--Seleccione su sexo--</item>
+        <item>Hombre</item>
+        <item>Mujer</item>
+    </string-array>
+
 </resources>
