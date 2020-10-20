@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Parcial 1</string>
+
+    <string name="Exp_1">Multitarea real de aplicaciones está disponible, es decir, las aplicaciones que no estén ejecutándose en primer plano reciben ciclos de reloj.</string>
+    <string name="Exp_2">Incluye un emulador de dispositivos, herramientas para depuración de memoria y análisis del rendimiento del software.</string>
+    <string name="Exp_3">Tiene soporte nativo para pantallas capacitivas con soporte multitáctil.</string>
+    <string name="Exp_4">Marcación por voz a través de Bluetooth, Capacidad para compartir contactos con otros teléfonos, Soporte para bases para auto y escritorio con Bluetooth, Matriz de compatibilidad mejorada con kits y auriculares para automóvil.</string>
+    <string name="Exp_5">Soporta tethering, que permite al teléfono ser usado como u npunto de acceso alámbrico o inalámbrico.</string>
+    <string name="Exp_6">Es un catálogo de aplicaciones gratuitas o de pago.</string>
+    <string name="Exp_7">Soporta cámaras de fotos, de vídeo, pantallas táctiles, GPS, acelerómetros, giroscopios.</string>
+
+
+    <string-array name="Fundamenetos">
+        <item name="Fund_1">Multitarea</item>
+        <item name="Fund_2">Entorno de desarrollo</item>
+        <item name="Fund_3">Multi-táctil</item>
+        <item name="Fund_4">Bluetooth</item>
+        <item name="Fund_5">Tethering</item>
+        <item name="Fund_6">GooglePlay</item>
+        <item name="Fund_7">Soporte para hardware adicional</item>
+    </string-array>
+
+</resources>
