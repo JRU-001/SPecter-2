@@ -2,6 +2,8 @@ package com.example.parcial1;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.EditText;
+import android.widget.ListView;
 import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -18,6 +20,8 @@ public class F_lista extends Fragment {
 
 
 
+
+
     public F_lista() {
         // Required empty public constructor
 
@@ -30,7 +34,6 @@ public class F_lista extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         Log.d(TAG, "onCreate: Started");
-
 
 
         // Inflate the layout for this fragment

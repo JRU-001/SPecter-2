@@ -1,8 +1,11 @@
 package com.example.myfirstapp;
 
+import android.content.Intent;
 import android.text.Editable;
 import android.text.TextUtils;
 import android.text.TextWatcher;
+import android.view.View;
+import android.view.ViewGroup;
 import android.widget.*;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
@@ -12,8 +15,15 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
+    public static final String SENT_TEXT1 ="com.example.myfisrtapp.SENT_TEXT1";
+    public static final String SENT_TEXT2 ="com.example.myfisrtapp.SENT_TEXT2";
+    public static final String SENT_TEXT3 ="com.example.myfisrtapp.SENT_TEXT3";
+    public static final String SENT_TEXT4 ="com.example.myfisrtapp.SENT_TEXT4";
+
     EditText et1, et2;
     Button b,d;
+    DatePicker dt2;
+    Spinner gend;
     CheckBox ja,js,py,cp,cc,go;
     RadioGroup g;
     RadioButton y,n;
@@ -25,6 +35,8 @@ public class MainActivity extends AppCompatActivity {
 
         et1 = (EditText) findViewById(R.id.txt_nomb);
         et2 = (EditText) findViewById(R.id.txt_appel);
+        //dt2 = (DatePicker) findViewById(R.id.cal_Nativ);
+        gend = (Spinner) findViewById(R.id.spin_gen);
         b = (Button) findViewById(R.id.btn_Env);
         d = (Button) findViewById(R.id.btn_cler);
 
@@ -43,6 +55,20 @@ public class MainActivity extends AppCompatActivity {
 
         et1.addTextChangedListener(mWatcher);
         et2.addTextChangedListener(mWatcher);
+
+        b.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                resultado();
+            }
+        });
+
+        d.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                borrar((ViewGroup) findViewById(R.id.lay_erz));
+            }
+        });
     }
 
     private void checkValidation() {
@@ -69,6 +95,42 @@ public class MainActivity extends AppCompatActivity {
         }
     };
 
+    private void borrar(ViewGroup group) {
+        for (int i = 0, count = group.getChildCount(); i < count; ++i) {
+            View view = group.getChildAt(i);
+            if (view instanceof EditText) {
+                ((EditText)view).setText("");
+            }
+            if (view instanceof RadioGroup) {
+                ((RadioGroup)view).setSelected(false);
+            }
+            if (view instanceof CheckBox) {
+                ((CheckBox)view).setChecked(false);
+            }
+
+
+            if(view instanceof ViewGroup && (((ViewGroup)view).getChildCount() > 0))
+                borrar((ViewGroup)view);
+        }
+    }
+
+    public void resultado(){
+
+        String nombre = et1.getText().toString();
+        String apellido = et2.getText().toString();
+        //String fecha = dt2.getDisplay().getName();
+        String gende = gend.getSelectedItem().toString();
+
+
+        Intent intent = new Intent(this, resultado.class);
+        intent.putExtra(SENT_TEXT1, nombre);
+        intent.putExtra(SENT_TEXT2, apellido);
+        //intent.putExtra(SENT_TEXT3, fecha);
+        intent.putExtra(SENT_TEXT4, gende);
+
+        startActivity(intent);
+
+    }
 
     public void activar(RadioGroup g, int checkedId) {
         // TODO Auto-generated method stub
@@ -92,5 +154,7 @@ public class MainActivity extends AppCompatActivity {
                 break;
         }
     }
+
+    
 
 }

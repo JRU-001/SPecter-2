@@ -25,9 +25,10 @@ public class MainActivity extends AppCompatActivity {
 
         final ListView lista = (ListView) findViewById(R.id.fundamentos);
 
-        Log.d(TAG, "onClick: clycleados");
+        Log.d(TAG, "onClick: Clickeados");
 
 
+        //lista.OnItemClickListener(new OnItemSelectedListener){    };
 
 
 
