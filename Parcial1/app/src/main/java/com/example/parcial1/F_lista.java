@@ -55,15 +55,14 @@ public class F_lista extends Fragment {
 
                 if(getResources().getConfiguration().orientation== Configuration.ORIENTATION_PORTRAIT){
                     Intent intent = new Intent();
-                    intent.setClass(getActivity(), F_data.class);
+                    intent.setClass(getActivity(), MainActivity2.class);
                     intent.putExtra("SENT_TEXT1", nomb[i]);
                     intent.putExtra("SENT_TEXT2", desc[i]);
 
                     startActivity(intent);
                 }else{
-                    F_data describe = (com.example.parcial1.F_data) getFragmentManager().findFragmentById(R.id.fragment2);
-                    assert describe != null;
-                    describe.newInfo(desc[i]);
+                    F_data F_data = (com.example.parcial1.F_data) getFragmentManager().findFragmentById(R.id.fragment2);
+                    F_data.newInfo(desc[i]);
                 }
 
             }

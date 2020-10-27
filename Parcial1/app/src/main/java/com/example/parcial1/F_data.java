@@ -16,7 +16,7 @@ import android.view.ViewGroup;
 
 public class F_data extends Fragment {
 
-    TextView explicacion;
+    static TextView explicacion;
     //private static final String TAG = "F_data";
     public static final String SENT_DATA ="com.example.Parcial1.SENT_DATA";
     private String data;
@@ -56,7 +56,7 @@ public class F_data extends Fragment {
         return view;
     }
 
-    public void newInfo(String info){
+    public static void newInfo(String info){
         explicacion.setText(info);
     }
 
