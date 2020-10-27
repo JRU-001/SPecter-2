@@ -6,14 +6,13 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".MainActivity">
-
-    <LinearLayout
-            android:id="@+id/contenedor"
-            android:layout_width="409dp"
-            android:layout_height="729dp"
-            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
+    <fragment
+            android:layout_width="375dp"
+            android:layout_height="598dp" android:name="com.example.parcial1.F_lista" android:id="@+id/fragment"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="139dp" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="213dp" android:layout_marginEnd="199dp"
             app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent"
-            android:orientation="vertical">
-    </LinearLayout>
-
+            android:layout_marginBottom="499dp" app:layout_constraintHorizontal_bias="0.4"
+            app:layout_constraintVertical_bias="0.253"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
